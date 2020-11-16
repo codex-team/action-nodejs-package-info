@@ -1,0 +1,25 @@
+name: 'Get package info'
+description: 'Action for getting information from package.json file'
+branding:
+  icon: 'box'
+  color: 'red'
+
+inputs:
+  path:
+    description: 'Path to package.json file'
+    required: false
+    default: ./
+
+outputs:
+  name:
+    description: 'Package name'
+
+  version:
+    description: 'Package version'
+
+  npmjs-link:
+    description: 'Link to npmjs.com package page'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
