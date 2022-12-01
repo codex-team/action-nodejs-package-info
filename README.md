@@ -33,7 +33,7 @@ Available since v1.1
 ```
 - name: Get package info
   id: package
-  uses: codex-team/action-nodejs-package-info@v1
+  uses: codex-team/action-nodejs-package-info@v1.1
 
 - name: Get the output
   run: |
