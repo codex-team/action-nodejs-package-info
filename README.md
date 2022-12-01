@@ -22,6 +22,10 @@ Package version
 
 Link to npmjs.com package page
 
+### `is-release-candidate`
+
+Is the package version a release candidate
+
 ## Example usage
 
 ```
@@ -34,6 +38,7 @@ Link to npmjs.com package page
     echo "name: ${{ steps.package.outputs.name }}"
     echo "version: ${{ steps.package.outputs.version }}"
     echo "npmjs-link: ${{ steps.package.outputs.npmjs-link }}"
+    echo "is-release-candidate: ${{ steps.package.outputs.is-release-candidate }}"
 ```
 
 You will get:
@@ -42,4 +47,5 @@ You will get:
 name: @editorjs/editorjs
 version: 2.19.0
 npmjs-link: https://www.npmjs.com/package/@editorjs/editorjs
+is-release-candidate: false
 ```
