@@ -4,25 +4,25 @@ Action for getting information from package.json file
 
 ## Inputs
 
-### `path`
+### `path` since v1
 
 Path to package.json file. `./` by default.
 
 ## Outputs
 
-### `name`
+### `name` since v1
 
 Package name
 
-### `version`
+### `version` since v1
 
 Package version
 
-### `npmjs-link`
+### `npmjs-link` since v1
 
 Link to npmjs.com package page
 
-### `is-release-candidate`
+### `is-release-candidate` since v1.1
 
 Is the package version a release candidate
 
