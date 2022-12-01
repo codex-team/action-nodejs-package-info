@@ -26,9 +26,16 @@ try {
      */
     const packageInfo = readPackageJson(path);
 
+    /**
+     * Detect if version is a release candidate 
+     * @type {string}
+     */
+    const isReleaseCandidate = packageInfo.version.includes('rc');
+
     core.setOutput("name", packageInfo.name);
     core.setOutput("version", packageInfo.version);
     core.setOutput("npmjs-link", `https://www.npmjs.com/package/${packageInfo.name}`);
+    core.setOutput("is-release-candidate", isReleaseCandidate);
 } catch (error) {
     core.setFailed(error.message);
 }

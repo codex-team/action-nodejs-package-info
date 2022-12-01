@@ -17,9 +17,12 @@ outputs:
   version:
     description: 'Package version'
 
+  is-release-candidate:
+    description: 'Is the package version a release candidate'  
+
   npmjs-link:
     description: 'Link to npmjs.com package page'
 
 runs:
-  using: 'node12'
+  using: 'node18'
   main: 'dist/index.js'
